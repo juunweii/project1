@@ -1,0 +1,108 @@
+/* CSS Reset */
+* {
+    padding:0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    /* background-color: #E0FFFF; */
+}
+
+h2 {
+    color: #1C1C1C;
+}
+
+a {
+    color: #A9A9A9;
+}
+
+.icon {
+    width: 30px; 
+    height: 30px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+}
+
+
+.post-image {
+    max-width: 100%; 
+    height: auto;
+}
+
+.post-content {
+    margin-bottom: 2vw;
+}
+
+/* RWD for bigger device */
+@media screen and (min-width:480px) {
+    .content-container {
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+    .title-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .card {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .content-container {
+        margin-left: 15vw; 
+        margin-right: 15vw;
+    }
+    .title-container {
+        font-size: 1.4vw;
+    }
+    .card {
+        font-size: 1.4vw;
+        padding: 30px;
+        margin: 5px;
+    }
+    .footer-content {
+        font-size: 1vw;
+    }
+}
+
+/* RWD for smaller device */
+@media (max-width: 600px) {
+    .post-container {
+      grid-template-columns: auto; 
+    }
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFAF0;
+    background-color: #2F4F4F;
+    height: 40px;
+    margin-top: 4vw;
+}
