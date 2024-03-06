@@ -6,8 +6,8 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-    /* background-color: #E0FFFF; */
 }
 
 h2 {
