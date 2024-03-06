@@ -21,6 +21,7 @@ body {
 @media (max-width: 768px) {
     .container {
         grid-template-columns: auto; 
+        grid-gap: 1%;
     }
     
     .main-content {
